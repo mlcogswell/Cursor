@@ -12,8 +12,8 @@ const nextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true,
-    path: process.env.NODE_ENV === 'production' ? '/Cursor/_next/image' : '/_next/image',
-    remotePatterns: [],
+    loader: 'custom',
+    loaderFile: './image-loader.js',
   },
 }
 
