@@ -8,10 +8,6 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "Instructional Design Portfolio",
   description: "A professional portfolio showcasing instructional design work and expertise",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-  },
   generator: 'v0.dev'
 }
 

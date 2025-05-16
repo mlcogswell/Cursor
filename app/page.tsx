@@ -1,9 +1,11 @@
+import type { NextPage } from 'next'
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight, BookOpen, FileText, Lightbulb, Mail, Presentation, Target, Users } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -67,12 +69,13 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex justify-center">
-                <img
+                <Image
                   src="/images/fractal-header.gif"
                   alt="Fractal pattern visualization"
                   className="rounded-lg object-cover"
                   width={400}
                   height={400}
+                  priority
                 />
               </div>
             </div>
@@ -84,12 +87,13 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="flex justify-center">
-                <img
+                <Image
                   src="/images/headshot.jpg"
                   alt="Professional headshot"
                   className="rounded-lg object-cover"
                   width={400}
                   height={400}
+                  priority
                 />
               </div>
               <div className="space-y-4">
@@ -143,7 +147,7 @@ export default function Home() {
               {/* Project 1 */}
               <div className="group relative overflow-hidden rounded-lg border">
                 <div className="aspect-video overflow-hidden">
-                  <img
+                  <Image
                     src="/images/addie-fractal.gif"
                     alt="Modified ADDIE Method of Instructional Design"
                     className="object-cover transition-transform group-hover:scale-105"
@@ -166,7 +170,7 @@ export default function Home() {
               {/* Project 2 */}
               <div className="group relative overflow-hidden rounded-lg border">
                 <div className="aspect-video overflow-hidden">
-                  <img
+                  <Image
                     src="/images/objectives-fractal.gif"
                     alt="Course Learning Objectives and Knowledge Checks"
                     className="object-cover transition-transform group-hover:scale-105"
@@ -189,7 +193,7 @@ export default function Home() {
               {/* Project 3 */}
               <div className="group relative overflow-hidden rounded-lg border">
                 <div className="aspect-video overflow-hidden">
-                  <img
+                  <Image
                     src="/images/architecture.gif"
                     alt="Cybersecurity Solution Architecture Presentation"
                     className="object-cover transition-transform group-hover:scale-105"
@@ -200,8 +204,7 @@ export default function Home() {
                 <div className="p-4">
                   <h3 className="font-semibold text-lg">Cybersecurity Solution Architecture Presentation</h3>
                   <p className="text-sm text-muted-foreground mt-2">
-                    An excerpt from a complex technical training I developed and conducted on the architecture of an
-                    AI-powered cybersecurity solution.
+                    A presentation designed to explain complex cybersecurity concepts to non-technical stakeholders.
                   </p>
                   <Button variant="link" className="p-0 mt-2" asChild>
                     <Link href="/portfolio/cybersecurity-architecture">View Sample</Link>
@@ -212,7 +215,7 @@ export default function Home() {
               {/* Project 4 */}
               <div className="group relative overflow-hidden rounded-lg border">
                 <div className="aspect-video overflow-hidden bg-black flex items-center justify-center py-4">
-                  <img
+                  <Image
                     src="/images/features-2.gif"
                     alt="Cybersecurity Solution Feature Presentation"
                     className="object-contain h-full max-h-[200px] transition-transform group-hover:scale-105 slow-animation"
@@ -235,7 +238,7 @@ export default function Home() {
               {/* Project 5 */}
               <div className="group relative overflow-hidden rounded-lg border">
                 <div className="aspect-video overflow-hidden">
-                  <img
+                  <Image
                     src="/images/integration.gif"
                     alt="AIOps Integration Training Writing Samples"
                     className="object-cover transition-transform group-hover:scale-105"
@@ -258,7 +261,7 @@ export default function Home() {
               {/* Project 6 */}
               <div className="group relative overflow-hidden rounded-lg border">
                 <div className="aspect-video overflow-hidden">
-                  <img
+                  <Image
                     src="/images/course-completion-2.gif"
                     alt="Certification Program Completion Survey"
                     className="object-cover transition-transform group-hover:scale-105"
@@ -464,3 +467,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home
