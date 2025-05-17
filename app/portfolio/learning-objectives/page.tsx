@@ -32,6 +32,11 @@ export default function LearningObjectivesPage() {
     show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   }
 
+  const questionItem = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  }
+
   const learningObjectives = [
     "Audit Policies",
     "Audit Groups",
@@ -73,7 +78,7 @@ export default function LearningObjectivesPage() {
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto py-8 px-4">
-        <Button variant="outline" asChild className="mb-6 text-primary border-primary hover:bg-primary/10">
+        <Button variant="outline" asChild className="mb-6 text-primary border-primary hover:bg-primary hover:text-primary-foreground">
           <Link href="/#portfolio">
             <ArrowLeft className="mr-2 h-4 w-4" /> Back to Portfolio
           </Link>
@@ -175,7 +180,13 @@ export default function LearningObjectivesPage() {
               animate={isLoaded ? "show" : "hidden"}
             >
               {knowledgeCheckQuestions.map((item, index) => (
-                <motion.div key={index} className="space-y-2" variants={item}>
+                <motion.div 
+                  key={index} 
+                  className="space-y-2" 
+                  initial="hidden"
+                  animate="show"
+                  variants={questionItem}
+                >
                   <p className="text-lg">{item.question}</p>
                   {item.options && (
                     <ul className="ml-6 space-y-1">
@@ -187,9 +198,8 @@ export default function LearningObjectivesPage() {
                   <div className="mt-2">
                     <Button
                       variant="outline"
-                      size="sm"
                       onClick={() => toggleAnswer(index)}
-                      className="text-primary border-primary hover:bg-primary/10"
+                      className="text-primary border-primary hover:bg-primary hover:text-primary-foreground text-sm py-1 px-3"
                     >
                       {showAnswers[index] ? "Hide Answer" : "Show Answer"}
                     </Button>

@@ -14,7 +14,7 @@ export default function CybersecurityFeaturesPage() {
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto py-8 px-4">
-        <Button variant="outline" asChild className="mb-6">
+        <Button variant="outline" asChild className="mb-6 text-primary border-primary hover:bg-primary hover:text-primary-foreground">
           <Link href="/#portfolio">
             <ArrowLeft className="mr-2 h-4 w-4" /> Back to Portfolio
           </Link>
