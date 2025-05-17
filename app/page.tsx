@@ -16,25 +16,25 @@ const Home: NextPage = () => {
           <nav className="ml-auto flex gap-4 sm:gap-6">
             <Link
               href="#about"
-              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-primary hover:text-primary-foreground"
+              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-[#E94E77] hover:text-white"
             >
               About
             </Link>
             <Link
               href="#portfolio"
-              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-primary hover:text-primary-foreground"
+              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-[#E94E77] hover:text-white"
             >
               Portfolio
             </Link>
             <Link
               href="#skills"
-              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-primary hover:text-primary-foreground"
+              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-[#E94E77] hover:text-white"
             >
               Skills
             </Link>
             <Link
               href="#contact"
-              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-primary hover:text-primary-foreground"
+              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-[#E94E77] hover:text-white"
             >
               Contact
             </Link>
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:gap-12 items-center justify-items-center">
               <div className="space-y-4 max-w-[600px]">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#E94E77]">
                   Creating and delivering transformative learning experiences
                 </h1>
                 <p className="text-white md:text-xl">
@@ -56,12 +56,12 @@ const Home: NextPage = () => {
                   achieve its learning objectives.
                 </p>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                  <Button asChild className="bg-[#E94E77] hover:bg-[#E94E77]/90 text-white">
                     <Link href="#portfolio">
                       View My Work <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
-                  <Button variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                  <Button variant="outline" asChild className="border-[#E94E77] text-[#E94E77] hover:bg-[#E94E77] hover:text-white">
                     <Link href="#contact">
                       Contact Me
                     </Link>
@@ -72,9 +72,8 @@ const Home: NextPage = () => {
                 <img
                   src="/Cursor/images/fractal-header-new.gif"
                   alt="Fractal pattern visualization"
-                  className="rounded-lg object-cover w-full h-auto"
-                  width={400}
-                  height={400}
+                  className="rounded-lg object-contain w-full"
+                  style={{ maxWidth: "400px", height: "auto" }}
                 />
               </div>
             </div>
@@ -159,7 +158,7 @@ const Home: NextPage = () => {
                     I was tasked with developing a framework for instructional design that reflected both the ADDIE best
                     practices and the team's current workflow.
                   </p>
-                  <Button variant="link" className="p-0 mt-2 text-primary hover:text-primary/80" asChild>
+                  <Button variant="link" className="p-0 mt-2 text-[#E94E77] hover:text-[#E94E77]/80" asChild>
                     <Link href="/portfolio/addie-analyze">View Sample</Link>
                   </Button>
                 </div>
@@ -182,7 +181,7 @@ const Home: NextPage = () => {
                     An example of learning objectives created using action verbs and the knowledge check questions that
                     test this learning.
                   </p>
-                  <Button variant="link" className="p-0 mt-2 text-primary hover:text-primary/80" asChild>
+                  <Button variant="link" className="p-0 mt-2 text-[#E94E77] hover:text-[#E94E77]/80" asChild>
                     <Link href="/portfolio/learning-objectives">View Sample</Link>
                   </Button>
                 </div>
@@ -204,7 +203,7 @@ const Home: NextPage = () => {
                   <p className="text-sm text-muted-foreground mt-2">
                     A presentation designed to explain complex cybersecurity concepts to non-technical stakeholders.
                   </p>
-                  <Button variant="link" className="p-0 mt-2 text-primary hover:text-primary/80" asChild>
+                  <Button variant="link" className="p-0 mt-2 text-[#E94E77] hover:text-[#E94E77]/80" asChild>
                     <Link href="/portfolio/cybersecurity-architecture">View Sample</Link>
                   </Button>
                 </div>
@@ -227,7 +226,7 @@ const Home: NextPage = () => {
                     An excerpt from a complex technical training I developed and conducted on features of an AI-powered
                     cybersecurity solution.
                   </p>
-                  <Button variant="link" className="p-0 mt-2 text-primary hover:text-primary/80" asChild>
+                  <Button variant="link" className="p-0 mt-2 text-[#E94E77] hover:text-[#E94E77]/80" asChild>
                     <Link href="/portfolio/cybersecurity-features">View Sample</Link>
                   </Button>
                 </div>
@@ -250,7 +249,7 @@ const Home: NextPage = () => {
                     I created, using text and interactive activities, a training for high-level IT users on how to
                     integrate two complex systems.
                   </p>
-                  <Button variant="link" className="p-0 mt-2 text-primary hover:text-primary/80" asChild>
+                  <Button variant="link" className="p-0 mt-2 text-[#E94E77] hover:text-[#E94E77]/80" asChild>
                     <Link href="/portfolio/aiops-integration">View Sample</Link>
                   </Button>
                 </div>
@@ -272,7 +271,7 @@ const Home: NextPage = () => {
                   <p className="text-sm text-muted-foreground mt-2">
                     I was tasked with developing a survey for the end of a 15-hour certification program.
                   </p>
-                  <Button variant="link" className="p-0 mt-2 text-primary hover:text-primary/80" asChild>
+                  <Button variant="link" className="p-0 mt-2 text-[#E94E77] hover:text-[#E94E77]/80" asChild>
                     <Link href="/portfolio/survey">View Sample</Link>
                   </Button>
                 </div>
@@ -294,8 +293,8 @@ const Home: NextPage = () => {
             </div>
             <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3">
               <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-background">
-                <div className="p-2 bg-primary/10 rounded-full">
-                  <Presentation className="h-6 w-6 text-primary" />
+                <div className="p-2 bg-[#E94E77]/10 rounded-full">
+                  <Presentation className="h-6 w-6 text-[#E94E77]" />
                 </div>
                 <h3 className="text-xl font-bold">Instructional Design</h3>
                 <p className="text-center text-muted-foreground">
@@ -303,8 +302,8 @@ const Home: NextPage = () => {
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-background">
-                <div className="p-2 bg-primary/10 rounded-full">
-                  <Lightbulb className="h-6 w-6 text-primary" />
+                <div className="p-2 bg-[#E94E77]/10 rounded-full">
+                  <Lightbulb className="h-6 w-6 text-[#E94E77]" />
                 </div>
                 <h3 className="text-xl font-bold">Learning Strategy</h3>
                 <p className="text-center text-muted-foreground">
@@ -312,8 +311,8 @@ const Home: NextPage = () => {
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-background">
-                <div className="p-2 bg-primary/10 rounded-full">
-                  <BookOpen className="h-6 w-6 text-primary" />
+                <div className="p-2 bg-[#E94E77]/10 rounded-full">
+                  <BookOpen className="h-6 w-6 text-[#E94E77]" />
                 </div>
                 <h3 className="text-xl font-bold">E-Learning Development</h3>
                 <p className="text-center text-muted-foreground">
@@ -321,8 +320,8 @@ const Home: NextPage = () => {
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-background">
-                <div className="p-2 bg-primary/10 rounded-full">
-                  <Users className="h-6 w-6 text-primary" />
+                <div className="p-2 bg-[#E94E77]/10 rounded-full">
+                  <Users className="h-6 w-6 text-[#E94E77]" />
                 </div>
                 <h3 className="text-xl font-bold">Facilitation</h3>
                 <p className="text-center text-muted-foreground">
@@ -330,8 +329,8 @@ const Home: NextPage = () => {
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-background">
-                <div className="p-2 bg-primary/10 rounded-full">
-                  <Target className="h-6 w-6 text-primary" />
+                <div className="p-2 bg-[#E94E77]/10 rounded-full">
+                  <Target className="h-6 w-6 text-[#E94E77]" />
                 </div>
                 <h3 className="text-xl font-bold">Learning Assessment</h3>
                 <p className="text-center text-muted-foreground">
@@ -339,8 +338,8 @@ const Home: NextPage = () => {
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-background">
-                <div className="p-2 bg-primary/10 rounded-full">
-                  <FileText className="h-6 w-6 text-primary" />
+                <div className="p-2 bg-[#E94E77]/10 rounded-full">
+                  <FileText className="h-6 w-6 text-[#E94E77]" />
                 </div>
                 <h3 className="text-xl font-bold">Content Development</h3>
                 <p className="text-center text-muted-foreground">
