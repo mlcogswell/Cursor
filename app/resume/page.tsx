@@ -2,7 +2,7 @@
 
 import { useEffect } from "react"
 import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft, FileDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function ResumePage() {
@@ -19,6 +19,14 @@ export default function ResumePage() {
             <ArrowLeft className="mr-2 h-4 w-4" /> Back to Portfolio
           </Link>
         </Button>
+
+        <div className="flex justify-end mb-6">
+          <Button variant="outline" asChild className="text-primary border-primary hover:bg-primary hover:text-primary-foreground">
+            <Link href="/mlc-resume.pdf" target="_blank" download>
+              <FileDown className="mr-2 h-4 w-4" /> Download Resume
+            </Link>
+          </Button>
+        </div>
 
         <div className="bg-black p-8 rounded-lg shadow-md max-w-4xl mx-auto border border-gray-800">
           <h1 className="text-3xl font-bold text-center mb-2 text-primary">MELISSA L. COGSWELL</h1>

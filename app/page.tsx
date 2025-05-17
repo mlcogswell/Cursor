@@ -108,10 +108,10 @@ const Home: NextPage = () => {
                   engage, inspire, and transform.
                 </p>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button variant="outline" asChild>
-                    <Link href="/resume">Download Resume</Link>
+                  <Button variant="outline" asChild className="text-primary border-primary hover:bg-primary hover:text-primary-foreground">
+                    <Link href="/resume">Resume</Link>
                   </Button>
-                  <Button variant="outline" asChild>
+                  <Button variant="outline" asChild className="text-primary border-primary hover:bg-primary hover:text-primary-foreground">
                     <Link
                       href="https://www.linkedin.com/in/melissa-l-cogswell"
                       target="_blank"
