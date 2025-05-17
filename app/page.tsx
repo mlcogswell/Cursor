@@ -40,11 +40,6 @@ const Home: NextPage = () => {
             >
               Contact
             </Link>
-            <Button variant="outline" asChild className="text-primary border-primary hover:bg-primary hover:text-primary-foreground">
-              <Link href="#contact">
-                Contact Me
-              </Link>
-            </Button>
           </nav>
         </div>
       </header>
@@ -96,18 +91,18 @@ const Home: NextPage = () => {
                 />
               </div>
               <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>
-                <p className="text-muted-foreground md:text-xl">
+                <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">About Me</h2>
+                <p className="text-muted-foreground text-base">
                   I am a trainer and instructional designer with 15 years of experience creating effective learning
                   solutions for diverse audiences. My background in both education and technology allows me to design
                   engaging experiences that drive real results.
                 </p>
-                <p className="text-muted-foreground md:text-xl">
+                <p className="text-muted-foreground text-base">
                   I've worked with organizations across many industries including educational technology, financial
                   services, cybersecurity, and AI-driven technology to develop training programs that improve
                   performance and achieve business objectives.
                 </p>
-                <p className="text-muted-foreground md:text-xl">
+                <p className="text-muted-foreground text-base">
                   My approach combines a strong understanding of instructional design principles, a desire to help
                   people achieve their full potential, and a true passion for teaching and learning experiences that
                   engage, inspire, and transform.
@@ -411,7 +406,7 @@ const Home: NextPage = () => {
                   </label>
                   <input
                     id="name"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 text-foreground"
                     placeholder="Your name"
                   />
                 </div>
@@ -425,7 +420,7 @@ const Home: NextPage = () => {
                   <input
                     id="email"
                     type="email"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 text-foreground"
                     placeholder="Your email"
                   />
                 </div>
@@ -438,13 +433,25 @@ const Home: NextPage = () => {
                   </label>
                   <textarea
                     id="message"
-                    className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 text-foreground"
                     placeholder="Your message"
                   ></textarea>
                 </div>
                 <Button 
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                  onClick={() => window.location.href = 'mailto:cogswellm@gmail.com'}
+                  onClick={() => {
+                    const nameInput = document.getElementById('name') as HTMLInputElement;
+                    const emailInput = document.getElementById('email') as HTMLInputElement;
+                    const messageInput = document.getElementById('message') as HTMLTextAreaElement;
+                    
+                    const subject = encodeURIComponent("Portfolio Contact");
+                    const body = encodeURIComponent(
+                      `Name: ${nameInput?.value || ''}\n` +
+                      `Email: ${emailInput?.value || ''}\n` +
+                      `Message: ${messageInput?.value || ''}`
+                    );
+                    window.location.href = `mailto:cogswellm@gmail.com?subject=${subject}&body=${body}`;
+                  }}
                 >
                   Send Message
                 </Button>
