@@ -105,7 +105,7 @@ export default function ADDIEAnalyzePage() {
             </motion.h1>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3, duration: 0.7 }}>
               <img
-                src="/images/addie-fracal-new.gif"
+                src="/public/images/addie-fracal-new.gif"
                 alt="ADDIE Fractal Pattern"
                 className="mx-auto rounded-lg mb-8 max-w-full h-auto"
                 style={{ maxHeight: "300px" }}

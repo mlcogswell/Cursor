@@ -25,7 +25,7 @@ export default function CybersecurityFeaturesPage() {
 
           <div className="bg-black p-6 rounded-lg mb-8 flex justify-center">
             <img
-              src="/images/features-2-new.gif"
+              src="/public/images/features-2-new.gif"
               alt="Cybersecurity Solution Features"
               className="max-h-[200px] object-contain slow-animation"
             />

@@ -70,7 +70,7 @@ const Home: NextPage = () => {
               </div>
               <div className="flex justify-center">
                 <Image
-                  src="/images/fractal-header-new.gif"
+                  src="/public/images/fractal-header-new.gif"
                   alt="Fractal pattern visualization"
                   className="rounded-lg object-cover"
                   width={400}
@@ -88,7 +88,7 @@ const Home: NextPage = () => {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="flex justify-center">
                 <Image
-                  src="/images/headshot.jpg"
+                  src="/public/images/headshot.jpg"
                   alt="Professional headshot"
                   className="rounded-lg object-cover"
                   width={400}
@@ -148,7 +148,7 @@ const Home: NextPage = () => {
               <div className="group relative overflow-hidden rounded-lg border">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/images/addie-fracal-new.gif"
+                    src="/public/images/addie-fracal-new.gif"
                     alt="Modified ADDIE Method of Instructional Design"
                     className="object-cover transition-transform group-hover:scale-105"
                     width={500}
@@ -171,7 +171,7 @@ const Home: NextPage = () => {
               <div className="group relative overflow-hidden rounded-lg border">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/images/objectives-new.gif"
+                    src="/public/images/objectives-new.gif"
                     alt="Course Learning Objectives and Knowledge Checks"
                     className="object-cover transition-transform group-hover:scale-105"
                     width={500}
@@ -194,7 +194,7 @@ const Home: NextPage = () => {
               <div className="group relative overflow-hidden rounded-lg border">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/images/architecture-new.gif"
+                    src="/public/images/architecture-new.gif"
                     alt="Cybersecurity Solution Architecture Presentation"
                     className="object-cover transition-transform group-hover:scale-105"
                     width={500}
@@ -216,7 +216,7 @@ const Home: NextPage = () => {
               <div className="group relative overflow-hidden rounded-lg border">
                 <div className="aspect-video overflow-hidden bg-black flex items-center justify-center py-4">
                   <Image
-                    src="/images/features-2-new.gif"
+                    src="/public/images/features-2-new.gif"
                     alt="Cybersecurity Solution Feature Presentation"
                     className="object-contain h-full max-h-[200px] transition-transform group-hover:scale-105 slow-animation"
                     width={500}
@@ -239,7 +239,7 @@ const Home: NextPage = () => {
               <div className="group relative overflow-hidden rounded-lg border">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/images/integration-new.gif"
+                    src="/public/images/integration-new.gif"
                     alt="AIOps Integration Training Writing Samples"
                     className="object-cover transition-transform group-hover:scale-105"
                     width={500}
@@ -262,7 +262,7 @@ const Home: NextPage = () => {
               <div className="group relative overflow-hidden rounded-lg border">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/images/course-completion-2-new.gif"
+                    src="/public/images/course-completion-2-new.gif"
                     alt="Certification Program Completion Survey"
                     className="object-cover transition-transform group-hover:scale-105"
                     width={500}
