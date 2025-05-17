@@ -16,25 +16,25 @@ const Home: NextPage = () => {
           <nav className="ml-auto flex gap-4 sm:gap-6">
             <Link
               href="#about"
-              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-primary hover:text-white"
+              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-primary hover:text-primary-foreground"
             >
               About
             </Link>
             <Link
               href="#portfolio"
-              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-primary hover:text-white"
+              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-primary hover:text-primary-foreground"
             >
               Portfolio
             </Link>
             <Link
               href="#skills"
-              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-primary hover:text-white"
+              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-primary hover:text-primary-foreground"
             >
               Skills
             </Link>
             <Link
               href="#contact"
-              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-primary hover:text-white"
+              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-primary hover:text-primary-foreground"
             >
               Contact
             </Link>
@@ -45,8 +45,8 @@ const Home: NextPage = () => {
         {/* Hero Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
           <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="space-y-4">
+            <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:gap-12 items-center justify-items-center">
+              <div className="space-y-4 max-w-[600px]">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
                   Creating and delivering transformative learning experiences
                 </h1>
@@ -61,18 +61,18 @@ const Home: NextPage = () => {
                       View My Work <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="#contact" className="text-primary">
+                  <Button variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                    <Link href="#contact">
                       Contact Me
                     </Link>
                   </Button>
                 </div>
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center w-full max-w-[600px]">
                 <img
                   src="/Cursor/images/fractal-header-new.gif"
                   alt="Fractal pattern visualization"
-                  className="rounded-lg object-cover"
+                  className="rounded-lg object-cover w-full h-auto"
                   width={400}
                   height={400}
                 />
@@ -159,7 +159,7 @@ const Home: NextPage = () => {
                     I was tasked with developing a framework for instructional design that reflected both the ADDIE best
                     practices and the team's current workflow.
                   </p>
-                  <Button variant="link" className="p-0 mt-2" asChild>
+                  <Button variant="link" className="p-0 mt-2 text-primary hover:text-primary/80" asChild>
                     <Link href="/portfolio/addie-analyze">View Sample</Link>
                   </Button>
                 </div>
@@ -182,7 +182,7 @@ const Home: NextPage = () => {
                     An example of learning objectives created using action verbs and the knowledge check questions that
                     test this learning.
                   </p>
-                  <Button variant="link" className="p-0 mt-2" asChild>
+                  <Button variant="link" className="p-0 mt-2 text-primary hover:text-primary/80" asChild>
                     <Link href="/portfolio/learning-objectives">View Sample</Link>
                   </Button>
                 </div>
@@ -204,7 +204,7 @@ const Home: NextPage = () => {
                   <p className="text-sm text-muted-foreground mt-2">
                     A presentation designed to explain complex cybersecurity concepts to non-technical stakeholders.
                   </p>
-                  <Button variant="link" className="p-0 mt-2" asChild>
+                  <Button variant="link" className="p-0 mt-2 text-primary hover:text-primary/80" asChild>
                     <Link href="/portfolio/cybersecurity-architecture">View Sample</Link>
                   </Button>
                 </div>
@@ -227,7 +227,7 @@ const Home: NextPage = () => {
                     An excerpt from a complex technical training I developed and conducted on features of an AI-powered
                     cybersecurity solution.
                   </p>
-                  <Button variant="link" className="p-0 mt-2" asChild>
+                  <Button variant="link" className="p-0 mt-2 text-primary hover:text-primary/80" asChild>
                     <Link href="/portfolio/cybersecurity-features">View Sample</Link>
                   </Button>
                 </div>
@@ -250,7 +250,7 @@ const Home: NextPage = () => {
                     I created, using text and interactive activities, a training for high-level IT users on how to
                     integrate two complex systems.
                   </p>
-                  <Button variant="link" className="p-0 mt-2" asChild>
+                  <Button variant="link" className="p-0 mt-2 text-primary hover:text-primary/80" asChild>
                     <Link href="/portfolio/aiops-integration">View Sample</Link>
                   </Button>
                 </div>
@@ -272,7 +272,7 @@ const Home: NextPage = () => {
                   <p className="text-sm text-muted-foreground mt-2">
                     I was tasked with developing a survey for the end of a 15-hour certification program.
                   </p>
-                  <Button variant="link" className="p-0 mt-2" asChild>
+                  <Button variant="link" className="p-0 mt-2 text-primary hover:text-primary/80" asChild>
                     <Link href="/portfolio/survey">View Sample</Link>
                   </Button>
                 </div>
