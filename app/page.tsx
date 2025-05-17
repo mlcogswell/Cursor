@@ -70,7 +70,7 @@ const Home: NextPage = () => {
               </div>
               <div className="flex justify-center">
                 <Image
-                  src="/images/fractal-header.gif"
+                  src="/images/fractal-header-new.gif"
                   alt="Fractal pattern visualization"
                   className="rounded-lg object-cover"
                   width={400}
@@ -148,7 +148,7 @@ const Home: NextPage = () => {
               <div className="group relative overflow-hidden rounded-lg border">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/images/addie-fractal.gif"
+                    src="/images/addie-fracal-new.gif"
                     alt="Modified ADDIE Method of Instructional Design"
                     className="object-cover transition-transform group-hover:scale-105"
                     width={500}
@@ -171,7 +171,7 @@ const Home: NextPage = () => {
               <div className="group relative overflow-hidden rounded-lg border">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/images/objectives-fractal.gif"
+                    src="/images/objectives-new.gif"
                     alt="Course Learning Objectives and Knowledge Checks"
                     className="object-cover transition-transform group-hover:scale-105"
                     width={500}
@@ -194,7 +194,7 @@ const Home: NextPage = () => {
               <div className="group relative overflow-hidden rounded-lg border">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/images/architecture.gif"
+                    src="/images/architecture-new.gif"
                     alt="Cybersecurity Solution Architecture Presentation"
                     className="object-cover transition-transform group-hover:scale-105"
                     width={500}
@@ -216,7 +216,7 @@ const Home: NextPage = () => {
               <div className="group relative overflow-hidden rounded-lg border">
                 <div className="aspect-video overflow-hidden bg-black flex items-center justify-center py-4">
                   <Image
-                    src="/images/features-2.gif"
+                    src="/images/features-2-new.gif"
                     alt="Cybersecurity Solution Feature Presentation"
                     className="object-contain h-full max-h-[200px] transition-transform group-hover:scale-105 slow-animation"
                     width={500}
@@ -239,7 +239,7 @@ const Home: NextPage = () => {
               <div className="group relative overflow-hidden rounded-lg border">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/images/integration.gif"
+                    src="/images/integration-new.gif"
                     alt="AIOps Integration Training Writing Samples"
                     className="object-cover transition-transform group-hover:scale-105"
                     width={500}
@@ -262,7 +262,7 @@ const Home: NextPage = () => {
               <div className="group relative overflow-hidden rounded-lg border">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/images/course-completion-2.gif"
+                    src="/images/course-completion-2-new.gif"
                     alt="Certification Program Completion Survey"
                     className="object-cover transition-transform group-hover:scale-105"
                     width={500}

@@ -128,7 +128,7 @@ export default function SurveyPage() {
                   transition={{ delay: 0.3, duration: 0.7 }}
                 >
                   <img
-                    src="/images/course-completion-2.gif"
+                    src="/images/course-completion-2-new.gif"
                     alt="Survey Data Visualization"
                     className="mx-auto rounded-lg mb-8 max-w-full h-auto"
                     style={{ maxHeight: "300px" }}
