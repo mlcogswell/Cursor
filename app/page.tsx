@@ -1,3 +1,5 @@
+"use client"
+
 import type { NextPage } from 'next'
 import Link from "next/link"
 import Image from "next/image"
@@ -9,42 +11,47 @@ const Home: NextPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center">
+        <div className="container max-w-5xl mx-auto flex h-16 items-center">
           <Link href="/" className="font-bold text-xl">
             Melissa L Cogswell - Instructional Design Portfolio
           </Link>
           <nav className="ml-auto flex gap-4 sm:gap-6">
             <Link
               href="#about"
-              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-[#E94E77] hover:text-white"
+              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-primary hover:text-primary-foreground"
             >
               About
             </Link>
             <Link
               href="#portfolio"
-              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-[#E94E77] hover:text-white"
+              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-primary hover:text-primary-foreground"
             >
               Portfolio
             </Link>
             <Link
               href="#skills"
-              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-[#E94E77] hover:text-white"
+              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-primary hover:text-primary-foreground"
             >
               Skills
             </Link>
             <Link
               href="#contact"
-              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-[#E94E77] hover:text-white"
+              className="text-sm font-medium px-3 py-2 rounded-md transition-colors hover:bg-primary hover:text-primary-foreground"
             >
               Contact
             </Link>
+            <Button variant="outline" asChild className="text-primary border-primary hover:bg-primary hover:text-primary-foreground">
+              <Link href="#contact">
+                Contact Me
+              </Link>
+            </Button>
           </nav>
         </div>
       </header>
       <main className="flex-1">
         {/* Hero Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
-          <div className="container px-4 md:px-6">
+          <div className="container max-w-5xl mx-auto px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:gap-12 items-center justify-items-center">
               <div className="space-y-4 max-w-[600px]">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#E94E77]">
@@ -59,11 +66,6 @@ const Home: NextPage = () => {
                   <Button asChild className="bg-[#E94E77] hover:bg-[#E94E77]/90 text-white">
                     <Link href="#portfolio">
                       View My Work <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                  <Button variant="outline" asChild className="border-[#E94E77] text-[#E94E77] hover:bg-[#E94E77] hover:text-white">
-                    <Link href="#contact">
-                      Contact Me
                     </Link>
                   </Button>
                 </div>
@@ -352,7 +354,7 @@ const Home: NextPage = () => {
 
         {/* Contact Section */}
         <section id="contact" className="w-full py-12 md:py-24 bg-black text-white">
-          <div className="container px-4 md:px-6">
+          <div className="container max-w-5xl mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">Get In Touch</h2>
@@ -440,14 +442,19 @@ const Home: NextPage = () => {
                     placeholder="Your message"
                   ></textarea>
                 </div>
-                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">Send Message</Button>
+                <Button 
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                  onClick={() => window.location.href = 'mailto:cogswellm@gmail.com'}
+                >
+                  Send Message
+                </Button>
               </div>
             </div>
           </div>
         </section>
       </main>
       <footer className="w-full border-t py-6">
-        <div className="container flex flex-col items-center justify-center gap-4 md:flex-row md:justify-between">
+        <div className="container max-w-5xl mx-auto flex flex-col items-center justify-center gap-4 md:flex-row md:justify-between">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © 2025 Melissa Cogswell. All rights reserved.
           </p>
