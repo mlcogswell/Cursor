@@ -22,7 +22,7 @@ export default function ResumePage() {
 
         <div className="flex justify-end mb-6">
           <Button variant="outline" asChild className="text-primary border-primary hover:bg-primary hover:text-primary-foreground">
-            <Link href="/mlc-resume.pdf" target="_blank" download>
+            <Link href="/mlc-resume-pdf.pdf" target="_blank" download>
               <FileDown className="mr-2 h-4 w-4" /> Download Resume
             </Link>
           </Button>
